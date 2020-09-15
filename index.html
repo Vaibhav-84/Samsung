@@ -12,6 +12,8 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+		
 		.carousel-item img{
 			height: 800px;
 		}
@@ -20,7 +22,9 @@
 		}
 		.shopheading{
 			text-align: center;
-			font-family: 'Ranchers', cursive;
+			/* font-family: 'Ranchers', cursive; 
+			*/
+			font-family: 'Courgette', cursive;
 		}
 		body{
 			background-color: black;
@@ -48,8 +52,25 @@
 			color: rgb(158, 21, 212);
 			z-index: 1;
 			font-size: 80px;
-			left: 100px;
-			font-family: 'Lobster', cursive;
+			font-family: 'Courgette', cursive;
+			
+		}
+		#view{
+			text-decoration: none;
+			position: relative;
+			left: 45%;
+			bottom: 100px;
+			background-color: white;
+			color: black;
+			padding: 20px 50px;
+			border: 2px solid black;
+			border-radius: 50px;
+			font-weight: bold;
+			font-family: 'Courgette', cursive;
+		}
+		#view:hover{
+			background-color: black;
+			color: white;
 		}
 		@media(max-width: 480px){
 			.carousel-item img{
@@ -58,9 +79,18 @@
 		.productimg h1{
 			font-size: 12px;
 			left: 80px;
+			margin-top: 5px;
 		}
 		.aboutimg{
 			width: 100%;
+		}
+		#view{
+			font-size: 10px;
+			padding: 5px 10px;
+			bottom: 30px;
+			background-color: black;
+			color: white;
+			left: 40%;
 		}
 		}
 	</style>
@@ -103,6 +133,7 @@
 	  <div class="productimg">
 		  <h1>ALL New Samsung S20 Ultra for BTS Army</h1>
 		  <img src="https://i.gadgets360cdn.com/large/samsung_galaxy_s20_plus_bts_edition_image_1593419878268.jpg" alt="">
+		  <a id="view" href="https://www.samsung.com/in/microsite/galaxy-note20-virtual-experience/">360 view</a>
 	  </div>
 	<div class="container my-4" id="shop">
 		<h3 class="shopheading">Shop With Us</h3>
